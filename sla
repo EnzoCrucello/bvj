@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+
+namespace esse1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> list = new List<string>();
+
+            list.Add("Pedro");
+            list.Add("Enzo");
+            list.Add("Angelo");
+            list.Insert(1, "Marcos");
+
+            foreach (string obj in list)
+            {
+                Console.WriteLine(obj);
+            }
+
+            Console.WriteLine("Tamanho lista: " + list.Count);
+
+        }
+    }
+}
